@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Unravel Viti PTE LTD — Proposal (HTML View)</title>
+  <style>
+    :root{
+      --brand:#0d9488; /* teal-600 */
+      --brand-dark:#0b766c; /* darker teal */
+      --ink:#0f172a; /* slate-900 */
+      --muted:#475569; /* slate-600 */
+      --paper:#ffffff;
+      --bg:#f1f5f9; /* slate-100 */
+    }
+    html,body{height:100%}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--ink);
+      font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, "Apple Color Emoji","Segoe UI Emoji";
+    }
+    .wrap{
+      max-width: 960px;
+      margin: 32px auto 64px;
+      padding: 24px;
+    }
+    .card{
+      background: var(--paper);
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(2,8,23,.06), 0 2px 8px rgba(2,8,23,.04);
+      overflow: hidden;
+      border: 1px solid #e2e8f0;
+    }
+    .letter{
+      padding: 32px clamp(20px, 4vw, 48px) 40px;
+    }
+    header.brand{
+      display:flex; align-items:center; justify-content:space-between;
+      gap: 16px;
+      padding: 20px clamp(20px, 4vw, 48px);
+      background: linear-gradient(135deg, var(--brand), var(--brand-dark));
+      color: #fff;
+    }
+    .brand-left{display:flex; align-items:center; gap:14px}
+    .logo{
+      width: 44px; height: 44px; border-radius: 12px; background:#fff; display:grid; place-items:center;
+      box-shadow: inset 0 0 0 2px rgba(13,148,136,.2);
+    }
+    .logo svg{width:26px; height:26px; fill:var(--brand)}
+    h1.title{margin:0; font-size: clamp(18px, 3.2vw, 24px); letter-spacing:.2px}
+    .subtitle{margin:2px 0 0; opacity:.9; font-size: 14px}
+    .actions{display:flex; gap:10px; flex-wrap:wrap}
+    .btn{
+      appearance:none; border:0; padding:10px 14px; border-radius:10px; font-weight:600; cursor:pointer;
+      background:#fff; color: var(--brand-dark);
+      box-shadow: 0 1px 2px rgba(0,0,0,.05), inset 0 0 0 1px rgba(2,8,23,.06);
+    }
+    .btn:hover{filter:brightness(0.98)}
+
+    .to-line{color:var(--muted); margin: 0 0 18px}
+    h2{font-size: clamp(20px, 3.2vw, 26px); margin: 26px 0 10px}
+    h3{font-size: 18px; margin: 18px 0 8px; color: var(--brand-dark)}
+
+    ul{margin: 4px 0 16px 22px}
+    li{margin: 6px 0}
+
+    .section{margin: 26px 0}
+    .signature{margin-top: 28px}
+    .sig-name{font-weight:700}
+    .footer-note{
+      font-size: 13px; color: var(--muted);
+      padding: 14px clamp(20px, 4vw, 48px) 22px;
+      border-top: 1px solid #e2e8f0; background:#fbfdff;
+    }
+
+    /* Print styles */
+    @media print{
+      body{background:#fff}
+      .wrap{margin:0; padding:0}
+      .actions{display:none}
+      .card{box-shadow:none; border:0}
+      header.brand{border-bottom: 2px solid #e2e8f0}
+      .letter{padding: 24px 28px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <header class="brand" role="banner">
+        <div class="brand-left">
+          <div class="logo" aria-hidden="true">
+            <!-- Simple island + path logo -->
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17c3-4 7-6 12-6 1.8 0 3.6.3 5 .9V6c0-1.1-.9-2-2-2H6C4.3 4 3 5.3 3 7v10z" opacity=".2"/><path d="M4 20h16a2 2 0 0 0 2-2v-4.5c-1.5-.8-3.3-1.2-5.2-1.2-5.2 0-9.8 2.5-12.8 6.7A2 2 0 0 0 4 20z"/></svg>
+          </div>
+          <div>
+            <h1 class="title">Unravel Viti PTE LTD</h1>
+            <div class="subtitle">Project Proposal — HTML View</div>
+          </div>
+        </div>
+        <div class="actions">
+          <button class="btn" onclick="window.print()" title="Print this proposal">Print</button>
+          <button class="btn" onclick="downloadHTML()" title="Download as .html">Download</button>
+        </div>
+      </header>
+
+      <main class="letter" role="main">
+        <p class="to-line">Bula Vinaka Taraiasi Wara,</p>
+        <p>
+          Thank you for outlining your vision for the Unravel Viti website. I am excited about the opportunity to contribute to this project, as it aligns strongly with both my technical expertise and passion for building solutions that create real business impact. Please find my response below:
+        </p>
+
+        <section class="section" aria-labelledby="tools">
+          <h2 id="tools">1. Tools and Technologies</h2>
+          <p>For a project of this scale and scope, my approach would be to use technologies that balance scalability, security, and flexibility:</p>
+          <h3>• Server &amp; Hosting:</h3>
+          <ul>
+            <li>Linux-based cloud server (AWS, DigitalOcean, or Linode) with cPanel for management, ensuring a stable, secure, and scalable hosting environment.</li>
+            <li>Minimum 100GB storage with dedicated resources.</li>
+          </ul>
+          <h3>• Framework / CMS Options:</h3>
+          <ul>
+            <li><strong>Drupal:</strong> Ideal for complex, multi-service platforms due to its modularity, strong security standards, and multi-vendor marketplace capabilities.</li>
+            <li><strong>WordPress</strong> (with WooCommerce / Marketplace extensions): Faster setup for e-commerce and booking, but requires careful hardening for enterprise-grade security.</li>
+            <li><strong>Magento (Adobe Commerce):</strong> A strong option for e-commerce-heavy builds if scaling the marketplace is the top priority.</li>
+          </ul>
+          <h3>• Security Considerations:</h3>
+          <ul>
+            <li>SSL/TLS encryption, regular penetration testing, two-factor authentication for admin users, and compliance with PCI DSS standards for payment integrations.</li>
+            <li>Frequent security patches and server monitoring tools (e.g., Fail2Ban, ModSecurity).</li>
+          </ul>
+          <h3>• Payment Integrations:</h3>
+          <ul>
+            <li><strong>Credit/Debit Cards:</strong> Through Stripe or PayPal as global-standard gateways.</li>
+            <li><strong>Local Mobile Wallets:</strong> Integration of M-PAiSA and Digicel MyCash for Fiji-based transactions.</li>
+            <li><strong>Cryptocurrency (Bitcoin/USDT):</strong> Through secure APIs such as Coinbase Commerce or BitPay (still learning, but can integrate with proper testing).</li>
+          </ul>
+          <p>This mix ensures Unravel Viti supports multiple secure payment methods while remaining flexible for future scaling.</p>
+        </section>
+
+        <section class="section" aria-labelledby="timeline">
+          <h2 id="timeline">2. Timeline &amp; Resources</h2>
+          <ul>
+            <li><strong>Estimated Timeline:</strong> 3–6 months depending on whether we use a ready-made CMS (faster) or build more customized workflows (longer but more flexible).</li>
+            <li><strong>Resources Needed:</strong>
+              <ol>
+                <li>Design tools – Figma developer seat for prototyping, Canva premium for branding assets.</li>
+                <li>Hosting plan – Cloud hosting with cPanel, ~100GB+ storage.</li>
+                <li>Development machine – High-performance laptop for local development and testing.</li>
+                <li>Domain and SSL certificates – For secure deployment.</li>
+              </ol>
+            </li>
+          </ul>
+        </section>
+
+        <section class="section" aria-labelledby="costs">
+          <h2 id="costs">3. Estimated Costs</h2>
+          <ul>
+            <li><strong>Hosting:</strong> USD $400–$750 annually (depending on provider and storage/bandwidth).</li>
+            <li><strong>Development:</strong> USD $8,000 – $30,000 (depending on scope, level of customization, and integrations).</li>
+            <li><strong>Additional Integrations</strong> (M-PAiSA, mobile wallets, booking/payment APIs, cryptocurrency support): ~USD $3,000.</li>
+          </ul>
+          <p>These figures cover the end-to-end delivery of the website, including design, development, security hardening, payment integration, and testing.</p>
+        </section>
+
+        <section class="section" aria-labelledby="closing">
+          <h2 id="closing">Closing</h2>
+          <p>
+            I believe this platform has the potential to position Unravel Viti as a digital leader in promoting Fiji’s inland tours globally while also empowering SMEs to reach new markets. I would be happy to discuss the proposal further and refine the scope to align with your exact requirements.
+          </p>
+          <div class="signature">
+            <div>Vinaka vakalevu,</div>
+            <div class="sig-name">Isimeli Savutini</div>
+          </div>
+        </section>
+      </main>
+
+      <div class="footer-note" role="contentinfo">
+        © <span id="year"></span> Unravel Viti PTE LTD — Draft proposal prepared by Isimeli Savutini.
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Set year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Download as .html
+    function downloadHTML(){
+      const blob = new Blob([document.documentElement.outerHTML], {type: 'text/html'});
+      const url = URL.createObjectURL(blob);
+      const a = Object.assign(document.createElement('a'), {
+        href: url,
+        download: 'Unravel-Viti-Proposal.html'
+      });
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+    }
+  </script>
+</body>
+</html>
